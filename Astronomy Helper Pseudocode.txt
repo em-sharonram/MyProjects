@@ -1,0 +1,54 @@
+// main module
+Module main()
+	// Declare a variable to hold the menu selection.
+	Declare Integer menuSelection
+	
+	// Display the menu.
+	Display "Select a Planet from the menu below: "
+	Display "1. Mercury"
+	Display "2. Venus"
+	Display "3. Earth"
+	Display "4. Mars"
+	Display "5. Exit the program."
+	Display
+	
+	// Get the user's menu selection.
+	Display "Enter your selection."
+	Input menuSelection
+	
+	// Validate the menu selection.
+	While menuSelection < 1 OR menuSelection > 5
+		Display "Error! Invalid menu selection made."
+		Display "Please select option 1, 2, 3, 4, or 5."
+		Input menuSelection
+	End While
+	
+	//Perform the selected operation.
+	Select menuSelection
+		Case 1: 
+			Display "Average distance from the sun: 57.9 million kilometers."
+			Display "Mass: 3.31 x 10^23kg."
+			Display "Surface temperature: -173 to 430 degrees Celsius."
+			
+		Case 2:
+			Display "Average distance from the sun: 108.2 million kilometers."
+			Display "Mass: 4.87 x 10^24kg."
+			Display "Surface temperature: 472 degrees Celsius."
+			
+		Case 3:
+			Display "Average distance from the sun: 149.6 million kilometers."
+			Display "Mass: 5.967 x 10^24kg."
+			Display "Surface temperature: -50 to 50 degrees Celsius."
+			
+		Case 4:
+			Display "Average distance from the sun: 227.9 million kilometers."
+			Display "Mass: 0.6424 x 10^24kg."
+			Display "Surface temperature: -140 to 20 degrees Celsius."
+			
+		Case 5:
+			Display "Goodbye!"
+	End Select
+End Module
+		
+	
+	

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap" rel="stylesheet">
+  <title>Rucker's</title>
+</head>
+<body>
+  <!-- Header section -->
+  <header>
+    <div class="main">
+      <nav>
+        <ul class="left-side">
+          <li><a class="current" href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="specials.html">Specials</a></li>
+          <li><a href="giftcards.html">Gift Cards</a></li>
+          <li><a href="orderonlineform.html">Order Online</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <ul class="right-side">
+          <li><a href="tel:602-789-5672">CALL: (602) 789-5672</a></li>
+        </ul>
+      </nav>
+    </div>
+    
+    <!-- Welcome page -->
+    <div>
+      <div class="content">
+        <div class="container">
+          <h1>Rucker's Steakhouse</h1>
+          <h2><i>"The best steak in Scottsdale"</i></h2>
+          <p>555 Mountainview Ave., Scottsdale, AZ 85260 - Phone: (602) 789-5672</p>
+          <br>
+          <p>Welcome to Rucker’s, which has been voted Best Steakhouse in Scottsdale four
+            years running! At Rucker’s you can enjoy a quality steak, amazing wine, and a quiet
+            atmosphere in a mountain-themed restaurant. Rucker’s has been a tradition in
+            Scottsdale since 1975 and is an amazing place to dine</p>
+          <br>
+          <form style="display: inline" action="menu.html" method="get">
+            <button><b>OUR FULL MENU</b></button>
+          </form>
+        </div>
+      </div>
+    </div>      
+  </header>
+
+  <!-- About Us section -->
+  <section class="about">
+    <div class="content-text">
+      <img src="./Images/steakhouse_about.jpg" alt="Steakhouse">
+      <div class="about-text">
+        <h2>About Us</h2>
+        <h3>Rucker's Steakhouse</h3>
+        <p>It all began when Rucker's was founded in 1975. Arizona has a long and rich history. Come now and experience on our locally owned Rucker's Best Steakhouse in Scottsdale Arizona as we transport you on a wonderful mountain view dining experience.</p> 
+        <p>At Rucker's you can enjoy a quality steak, amazing wine, family-friendly and a quiet mountain-themed restaurant. We feature USDA top choice cuts of beef all cooked over our famous open oak-fired frill. Our menu offers a wide variety of wine, appetizers and entrees along with nightly specials including our perfectly seasoned, T-bone, Porterhouse, Sirlion and fork tender prime rib of beef served every Tuesday, Thursday and Saturday evenings. See the sunset on our outdoor wraparound porch. Rucker's Steakhouse is open 7 days a week. See you soon!</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reservation section -->
+  <section class="reserve">
+    <div class="reserve-time">
+      <h2>OPEN 7 DAYS A WEEK</h2>
+      <h3>Monday to Saturday</h3>
+      <p>11 AM to 10 PM</p>
+      <h3>Sunday</h3>
+      <p>12 PM to 8 PM</p>
+      <br>
+      <br>
+      <p>Call Us: (602) 789-5672</p>
+    </div>
+
+    <div class="reserve-form">
+      <h2>RESERVATION ONLINE</h2>
+      <form action="http://www.example.com/login.php">
+        <p>Name:</p>
+            <input type="text" name="first-name" placeholder="Enter Full Name">
+        <p>Phone Number:</p>
+            <input type="number" name="phone" placeholder="Enter Phone Number">
+        <p>Date:</p>
+            <input type="date">
+        <p>Time</p>
+            <input type="time">
+        <p>How many dining:</p>
+          <select name="select" id="#">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="more than 10">more than 10</option>
+          </select>
+      <div class="checkbox">
+        <p>Dining Option:</p>
+          <input type="checkbox" id="dining-1" name="dining-1" value="inside">
+            <label for="dining-1">Inside</label>         
+          <input type="checkbox" id="dining-2" name="dining-2" value="bar">
+            <label for="dining-2">Bar</label>        
+          <input type="checkbox" id="dining-3" name="dining-3" value="mountainview">
+            <label for="dining-3">Mountain View</label>
+      </div>
+      <br>
+      <div class="submit">
+        <input type="submit" value="Submit">
+      </div>   
+      </form>
+    </div>
+  </section>
+
+  <!-- Special section -->
+  <section class="specials">
+    <div class="specials-container">
+      <div class="specials-text">
+        <h2>Daily Specials</h2>
+      </div>
+    </div>
+
+      <!-- Special content start -->
+      <div class="specials-content">
+        <div class="specials-main">
+          <h2>Deals of the day starting from 11 am - 10 pm</h2>
+          <form style="display: inline" action="orderonlineform.html" method="get">
+          <div class="specials-box">
+            <div class="specials-img">
+              <img src="./Images/beer-with-steak-dinner.jpg" alt="specials-image">
+              <div class="specials-menu">
+                <h3 class="specials-label">Steak Dinner with Beer</h3>
+                <div class="special-price">
+                  <h3 class="food-price">$42.75</h3>
+                  <button>Order</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="specials-box">
+            <div class="specials-img">
+              <img src="./Images/wine-with-steak-dinners.jpg" alt="specials-image">
+              <div class="specials-menu">
+                <h3 class="specials-label">Wine Dinner with Steak</h3>
+                <div class="special-price">
+                  <h3 class="food-price">$57.45</h3>
+                  <button>Order</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="specials-box">
+            <div class="specials-img">
+              <img src="./Images/salad-dinner.jpg" alt="specials-image">
+              <div class="specials-menu">
+                <h3 class="specials-label">Salad Dinner</h3>
+                  <input type="radio" id="salad-1" name="salad-1" value="steak">
+                  <label for="salad-1">Steak</label>         
+                <input type="radio" id="salad-2" name="salad-2" value="chicken">
+                  <label for="salad-2">Chicken</label>        
+                <input type="radio" id="salad-3" name="salad-3" value="fish">
+                  <label for="salad-3">Fish</label>
+                <div class="special-price">
+                  <h3 class="food-price">$20.45</h3>
+                  <button>Order</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="specials-box">
+            <div class="specials-img">
+              <img src="./Images/wines.jpg" alt="specials-image">
+              <div class="specials-menu">
+                <h3 class="specials-label">Wine Tasting</h3>
+                <div class="price">
+                  <h3 class="food-price">$40.00</h3>
+                  <button>Order</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        <!-- Special content ends-->   
+          </form>
+        </div>
+      </div>
+  </section>
+  
+  <!-- Footer -->
+    <footer class="main-footer">
+      <p>Rucker’s Steakhouse &#169; 2023 All rights reserved</p>
+    </footer>
+  
+  </body>
+  </html>

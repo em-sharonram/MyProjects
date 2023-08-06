@@ -1,0 +1,42 @@
+// This program is to calculates and displays a user BMI.
+
+Module main ()
+	// Declare weight, height, and bmi.
+	Declare Integer weightNumber
+	Declare Integer heightNumber
+	Declare Real bmiWeight
+
+	// Pass each variable to getWeight and getHeight.
+	Call getWeight (weightNumber)
+	Call getHeight (heightNumber)
+End Module
+
+// The getWeight module displays the weight in pounds.
+Module getWeight (Integer weight)
+	Display "Enter your weight in pounds."
+	Input weight
+End Module
+
+// The getHeight module displays the height in inches.
+Module getHeight (Integer height)
+	Display "Enter your height in inches."
+	Input height
+End Module
+
+// The bmiWeight module accepts weight as an argument and displays the BMI result.
+Module bmiWeight (Real Weight)
+	Declare Real bmiWeight
+	Set bmi = weight * 703 / height^2
+
+	If bmi > 25 then
+		Display "Overweight"
+	Else if bmi < 18.5 then
+		Display "Underweight"
+	Else if bmi > 18.5 AND < 25 then
+		Display "Normal"
+	
+	// Display the BMI result.
+	Display "Your BMI is ", bmi, "You are ", bmiWeight
+End Module
+	
+

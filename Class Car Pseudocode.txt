@@ -1,0 +1,49 @@
+Class Car
+	// Fields
+	Private Integer yearModel
+	Private String make
+	Private Integer speed
+	
+	// Constructor
+	Public Module Car(Integer ym, String m, Integer s)
+		Set yearModel = ym
+		Set make = m
+		Set speed = s
+	End Module
+	
+	// Mutators
+	Public Module setYearModel(Integer ym)
+		Set yearModel = ym
+	End Module
+	
+	Public Module setMake(String m)
+		Set make = m
+	End Module
+	
+	Public Module setSpeed(Integer s)
+		Set speed = 0
+	End Module
+	
+	// Accessors
+	Public Function Integer getYearModel()
+		Return yearModel
+	End Function
+	
+	Public Function String getMake()
+		Return make
+	End Function
+	
+	Public Function Integer getSpeed()
+		Return speed
+	End Function
+	
+	// Accelerate
+	Public Function Integer accelerate()
+		Return speed = speed + 5
+	End Function
+	
+	// Brake
+	Public Function Integer brake()
+		Return speed = speed - 5
+	End Function
+End Class

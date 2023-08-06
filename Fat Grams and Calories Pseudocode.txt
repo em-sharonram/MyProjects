@@ -1,0 +1,22 @@
+// Declare variables.
+Declare Real fatGrams, calories, percentageCalFat
+
+// Get the fat grams.
+Display "Enter the fat grams in a food."
+Input fatGrams
+
+// Get the calories.
+Display "Enter the number of calories."
+Input calories
+
+// Calculate the percentage of calories from fat.
+Set percentageCalFat = (fatGrams * 9) / calories
+
+// Determine the percentage of calories from fat.
+Display "The percentage of calories from fat is ", percentageCalFat
+
+// If the results are less than 30 percent
+// food is low in fat.
+If percentageCalFat < 0.3 Then
+    Display "Food is low in fat."
+End if

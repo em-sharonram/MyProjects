@@ -1,0 +1,35 @@
+Module main()
+	// Declare car class variable.
+	Declare Car carAuto
+	
+	// Create a car object.
+	Set carAuto = New Car()
+	
+	// Display accelerate speed of a car.
+	Display "Here is the car accelerate speed."
+	Call carAuto.accelerate()	
+	Display "Current accelerate speed: ", carAuto.getSpeed()
+	Call carAuto.accelerate()
+	Display "Current accelerate speed: ", carAuto.getSpeed()
+	Call carAuto.accelerate()
+	Display "Current accelerate speed: ", carAuto.getSpeed()
+	Call carAuto.accelerate()
+	Display "Current accelerate speed: ", carAuto.getSpeed()
+	Call carAuto.accelerate()
+	Display "Current accelerate speed: ", carAuto.getSpeed()
+	Display
+	
+	// Display brake speed of a car.
+	Display "Here is the car brake speed."
+	Call carAuto.brake()
+	Display "Current brake speed: ", carAuto.getSpeed()
+	Call carAuto.brake()
+	Display "Current brake speed: ", carAuto.getSpeed()
+	Call carAuto.brake()
+	Display "Current brake speed: ", carAuto.getSpeed()
+	Call carAuto.brake()
+	Display "Current brake speed: ", carAuto.getSpeed()
+	Call carAuto.brake()
+	Display "Current brake speed: ", carAuto.getSpeed()
+End Module
+

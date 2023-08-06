@@ -1,0 +1,58 @@
+Main module()
+// Variables for the fields.
+Declare String addressLabel
+Declare Real latitudeLabel
+Declare Real longitudeLabel
+
+// A variable to get the location.
+Declare String getLocation
+
+// Counter variable for the loop.
+Declare Integer counter
+
+// Declare an output file.
+Declare OutputFile getLocationFile
+
+// Open a file named getLocation.dat.
+Open getLocationFile "getLocation.dat"
+
+// Get each location's data and write it to the file.
+For counter = 1 To getLocation
+	// Get the address.
+	Display "Address", counter
+	Input addressLabel
+
+// Write the record to the file.
+Write latitudeLabel, longitudeLabel
+	
+	// Display a blank line.
+	Display
+End For
+
+	// Close the file
+Close getLocationFile
+
+
+Module Init()
+	// Initialize the Labels with the device'a statement
+	// current location.
+	addressLabel.Text = Location.getAddress()
+	latitudeLabel.Text = realToString(Location.getLatitude())
+	longitudeLabel.Text = realToString(Location.getLongitude())
+End Module
+
+Module getLocationButton_Click()
+	addressLabel.getLocation()
+End Module
+
+Module Location_LocationChanged()
+	// Update the Labels when the device's
+	// location changes.
+	addressLabel.Text = Location.getAddress()
+	latitudeLabel.Text = realtToString(Location.getLatitude())
+	longitudeLabel.Text = realtToString(Location.getLongitude())
+End Module
+
+Module exitButton_Click()
+	Close
+End Module
