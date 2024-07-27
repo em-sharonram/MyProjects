@@ -1,1 +1,1 @@
-These repositories contain my own projects that I created during my time in school.
+This repository showcases the projects I crafted during my academic journey.
